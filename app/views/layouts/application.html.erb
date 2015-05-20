@@ -8,6 +8,7 @@
 </head>
 <body>
 
+  <h1>Argo</h1>
 <% if current_user %>
   <%= link_to "Logout #{current_user.email}", destroy_user_session_path, method: :delete %>
 <% else %>
