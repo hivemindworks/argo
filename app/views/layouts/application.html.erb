@@ -16,6 +16,8 @@
   <%= link_to "Log In", new_user_session_path %>
 <% end %>
 
+<%= link_to "Create New Bus", new_bus_path %>
+
 <%- flash.each do |name, msg| -%>
   <%= content_tag :div, msg, :id => "flash_#{name}" if msg.is_a?(String) %>
 <%- end -%>  
