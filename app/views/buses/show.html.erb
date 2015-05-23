@@ -1,0 +1,10 @@
+<h2><%= @bus.name %></h2>
+
+<p>pick up: <%= @bus.pick_up %></p>
+<p>distance: <%= @bus.distance %></p>
+<p>date: <%= @bus.date %></p>
+<p>drive time: <%= @bus.drive_time %></p>
+<p>total time: <%= @bus.total_time %></p>
+
+<%= link_to "Edit Bus", edit_bus_path(@bus) %>
+<%= link_to "Delete Bus", bus_path(@bus), method: :delete%>
