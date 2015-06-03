@@ -4,6 +4,8 @@ class BusesController < ApplicationController
   end
   def show
     @bus = Bus.find(params[:id])
+    @reservation = @bus.reservations.build
+    @cost = sprintf('%.2f', @bus.cost / ( @bus.reservations.count + 1 ) )
   end
   def edit
     @bus = Bus.find(params[:id])
