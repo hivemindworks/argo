@@ -37,6 +37,6 @@ class BusesController < ApplicationController
 
   private
   def bus_params
-    params.require(:bus).permit(:name, :pick_up, :distance, :date, :drive_time, :total_time)
+    params.require(:bus).permit(:name, :cost, :pick_up, :distance, :date, :drive_time, :total_time)
   end
 end

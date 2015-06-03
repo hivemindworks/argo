@@ -9,6 +9,8 @@
 <%= form_for @bus do |f| %>
   <%= f.label :name %>
   <%= f.text_field :name, class: "block full-width field-light", placeholder:"What event is this bus going to? Be descriptive, but have fun with it" %>
+  <%= f.label :cost %>
+  <%= f.text_field :cost, class: "block full-width field-light"%>
   <label>Trip Type</label>
   <div class="clearfix">
     <button type="button" class="left button rounded-left is-active">Round Trip</button>
