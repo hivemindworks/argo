@@ -1,1 +1,5 @@
 <%= link_to "Create New Bus", new_bus_path %>
+
+<% @buses.each do |bus| %>
+  <%= link_to bus[:name], bus_path(bus) %>
+<% end %>
