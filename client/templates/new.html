@@ -1,0 +1,31 @@
+<template name='newbus'>
+  {{> header}}
+  <div class='container'>
+    <form class="center-form new-bus">
+      <label>Name</label>
+      <input name='name' type="text" placeholder='What event is this bus going to? Be descriptive, but have fun with it'>
+      <!--
+      MULTIPLE TRIPS COMING SOON
+      <label>Trip Type</label>
+      <div class="clearfix">
+        <button type="button" class="left button rounded-left is-active">Round Trip</button>
+        <button type="button" class="left button border-left not-rounded" disabled>One Way</button>
+        <button type="button" class="left button border-left rounded-right" disabled>Multi Trip</button>
+      </div>
+      -->
+      <label>Start Location</label>
+      <input name='start' type="text" class="block full-width mb1 field-light" id='startLoc'>
+      <label>Destination Location</label>
+      <input name='destination' type="text" class="block full-width mb1 field-light" id='destinationLoc'>
+      <label>Departure Time</label>
+      <div class='relative'>
+      <input name='embark' type='text' class="form-control" id='departuretime' />
+      </div>
+      <label>Return Time</label>
+      <div class='relative'>
+      <input name='depart' type='text' class="form-control" id='returntime' />
+      </div>
+      <button type="submit" class="button">Create Bus</button>
+    </form>
+  </div>
+</template>

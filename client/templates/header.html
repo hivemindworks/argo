@@ -1,0 +1,35 @@
+<template name ='header'>
+  <div class='bg-charcoal'>
+  <header class='container'>
+    <nav class="collapse navbar-collapse bs-navbar-collapse">
+    <a href="/" class="navbar-brand">Argo</a>
+    {{#if currentUser}}
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="/newbus" class="">Create a Bus</a>
+        </li>
+        <li>
+          <a href="../account">Account</a>
+        </li>
+        <li>
+          <a class='loud' href="../logout">Logout</a>
+        </li>
+      </ul>
+    {{else}}
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="/signup" class="">Create a Bus</a>
+        </li>
+        <li>
+          <a href="../login">Log In</a>
+        </li>
+        <li>
+          <a class='loud' href="../signup">Sign Up</a>
+        </li>
+      </ul>
+
+    {{/if}}
+    </nav>
+  </header>
+  </div>
+</template>

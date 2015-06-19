@@ -1,0 +1,88 @@
+/* CSS declarations go here */
+
+/* CUSTOM COLORS */
+.bg-charcoal { 
+  background-color: #242935;
+}
+
+.relative { position: relative; }
+
+header a {
+  color: #FFF;
+  font-weight: bold;
+  transition: all .2s;
+}
+
+header nav .nav a:hover {
+  background-color: #3A4767;
+  color: #FFF;
+}
+
+header nav .nav a.loud {
+  background-color: #675796;
+}
+header nav .nav a.loud:hover {
+  background-color: #B27EE2;
+}
+
+.center-form {
+  width: 40em;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.center-form label {
+  display: block;
+  margin-top: 2rem;
+}
+
+.center-form input {
+  display: block;
+  width: 100%;
+  background-color: #FFF;
+  -webkit-transition: box-shadow .2s ease;
+  transition: box-shadow .2s ease;
+  border: 1px solid #CCC;
+  border-radius: 3px;
+  height: 2.25rem;
+  padding: 2rem 1rem;
+  vertical-align: middle;
+  -webkit-appearance: none;
+}
+
+.center-form input:focus {
+  outline: 0;
+  border-color: #0074D9;
+  box-shadow: 0 0 0 2px rgba(0, 116, 217, 0.5);
+}
+
+.button {
+  color: #FFF;
+  background-color: #675796;
+  font-weight: bold;
+  border: none;
+  border-radius: 3px;
+  padding: 1rem 1.25rem;
+  margin-top: 2rem;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #B27EE2;
+}
+
+a.button {
+  text-decoration: none;
+  color: #FFF;
+}
+
+small {
+  display: block;
+  width: 100%;
+  margin-top: 2em;
+  text-align: center;
+  color: #ccc;
+}
+

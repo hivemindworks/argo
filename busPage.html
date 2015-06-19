@@ -1,0 +1,15 @@
+<template name="busPage">
+  {{> header}}
+  <div class='container'>
+  <div class="bus-page page">
+
+    <a href='/buses/{{_id}}'>
+    {{name}}
+    </a>
+
+    <label>Tickets Remaining</label>
+    {{seats}}
+  </div>
+  <a href='/reserve' class="button">Make a Reservation</a>
+  </div>
+</template>

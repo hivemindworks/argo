@@ -1,0 +1,11 @@
+<template name="layout">
+  {{> header}}
+  <div class="container">
+
+    <ul>
+      {{#each buses}}
+      {{> bus}}
+      {{/each}}
+    </ul>
+  </div>
+</template>
